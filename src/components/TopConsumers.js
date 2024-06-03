@@ -52,28 +52,28 @@ const TopConsumers = () => {
   return (
     <div>
       {error && <p>{error}</p>}
-      <h2>Top 5 Consumers Today</h2>
+      <h3>Top 5 Consumers Today</h3>
       <ul>
         {consumersToday.map((consumer, index) => (
           <li key={index}>{consumer.prenom} {consumer.nom} - {consumer.totalPichets} pichets</li>
         ))}
       </ul>
 
-      <h2>Top 5 Consumers This Week</h2>
+      <h3>Top 5 Consumers This Week</h3>
       <ul>
         {consumersWeek.map((consumer, index) => (
           <li key={index}>{consumer.prenom} {consumer.nom} - {consumer.totalPichets} pichets</li>
         ))}
       </ul>
 
-      <h2>Top 5 Consumers This Month</h2>
+      <h3>Top 5 Consumers This Month</h3>
       <ul>
         {consumersMonth.map((consumer, index) => (
           <li key={index}>{consumer.prenom} {consumer.nom} - {consumer.totalPichets} pichets</li>
         ))}
       </ul>
 
-      <h2>Top 5 Consumers This Year</h2>
+      <h3>Top 5 Consumers This Year</h3>
       <ul>
         {consumersYear.map((consumer, index) => (
           <li key={index}>{consumer.prenom} {consumer.nom} - {consumer.totalPichets} pichets</li>
